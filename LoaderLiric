@@ -1,0 +1,19 @@
+local PlaceId = game.PlaceId
+
+local Games = {
+    [3956818381] = "https://raw.githubusercontent.com/cc1677/Ninja-legends-Liric/refs/heads/main/NinjaLegendsLiric",
+    [18870629243] = "https://raw.githubusercontent.com/cc1677/Legend-Piece-Liric/refs/heads/main/LegendPieceLiric",
+    [286090429] =  "https://raw.githubusercontent.com/cc1677/Arsenal-Liric/refs/heads/main/LiricArsenal"
+}
+
+if Games[PlaceId] then
+    local success, err = pcall(function()
+        loadstring(game:HttpGet(Games[PlaceId]))()
+    end)
+    if not success then
+        warn("Failed to load script for this game: " .. tostring(err))
+    end
+else
+    
+    loadstring(game:HttpGet("https://githubusercontent.com"))()
+end
