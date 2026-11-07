@@ -5,6 +5,7 @@ local Games = {
     [18870629243] = "https://raw.githubusercontent.com/cc1677/Legend-Piece-Liric/refs/heads/main/LegendPieceLiric",
     [286090429] =  "https://raw.githubusercontent.com/cc1677/Arsenal-Liric/refs/heads/main/LiricArsenal"
     [2474168535] = "https://raw.githubusercontent.com/cc1677/WestBoundLiric/refs/heads/main/WestBoundLiric"
+    [116921506811323] = "https://raw.githubusercontent.com/cc1677/8BallDuelsLiric/refs/heads/main/8BallDuelsLiric"
 }
 
 if Games[PlaceId] then
